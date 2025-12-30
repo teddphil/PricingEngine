@@ -5,14 +5,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(qis_engine
-  src/core/timegrid.cpp
-  src/core/rng.cpp
-  src/market/flat_curve.cpp
-  src/market/flat_vol.cpp
-  src/model/gbm_model.cpp
-  src/strategy/vol_target_strategy.cpp
   src/engine/index_simulator.cpp
-  src/product/european_call.cpp
   src/pricing/mc_pricer.cpp
   src/risk/bump_risk.cpp
 )
