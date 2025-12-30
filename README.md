@@ -2,12 +2,10 @@
 
 A C++20 **pricing and risk-management framework** for **Quantitative Investment Strategies (QIS)** and derivatives written on **dynamic investment strategy indices**.
 
-This project demonstrates how a front-office quantitative analytics library can:
+Specific goals:
 - simulate **rules-based investment strategies** (e.g. volatility targeting),
 - price **derivatives on strategy indices** via Monte Carlo,
-- and produce **risk sensitivities** in a clean, extensible design.
-
-The code is intentionally structured to resemble a **real FO Quant / QA codebase** used for equities and equity-hybrid products.
+   produce **risk sensitivities** in a clean, extensible design.
 
 ---
 
