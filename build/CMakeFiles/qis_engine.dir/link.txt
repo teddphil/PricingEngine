@@ -1,2 +1,0 @@
-/usr/bin/ar qc libqis_engine.a CMakeFiles/qis_engine.dir/src/engine/index_simulator.cpp.o CMakeFiles/qis_engine.dir/src/pricing/mc_pricer.cpp.o CMakeFiles/qis_engine.dir/src/risk/bump_risk.cpp.o
-/usr/bin/ranlib libqis_engine.a

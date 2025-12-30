@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/price_vol_target_call.dir/apps/price_vol_target_call.cpp.o -o price_vol_target_call  libqis_engine.a
