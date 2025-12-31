@@ -1,46 +1,27 @@
 # QIS Pricing Engine (C++)
 
-A C++20 **pricing and risk-management framework** for **Quantitative Investment Strategies (QIS)** and derivatives written on **dynamic investment strategy indices**.
+A C++20 pricing and risk-management framework for Quantitative Investment Strategies (QIS) and derivatives written on dynamic investment strategy indices.
 
-Specific goals:
-- simulate **rules-based investment strategies** (e.g. volatility targeting),
-- price **derivatives on strategy indices** via Monte Carlo,
-   produce **risk sensitivities** in a clean, extensible design.
-
----
+## Specific goals
+- Simulate *rules-based investment strategies* (e.g. volatility targeting),
+- Price *derivatives on strategy indices* via Monte Carlo, produce *risk sensitivities* in a clean, extensible design.
 
 ## Key Features
 
-### Strategy & Index Modelling
-- Dynamic **volatility-targeting strategy**
-- Discrete rebalancing with cash allocation
-- Index construction driven by asset returns
-- Extensible strategy interface (trend, CPPI, risk parity, etc.)
+- Strategy & Index Modelling
+  - Dynamic *volatility-targeting strategy*.
+  - Discrete rebalancing with cash allocation.
+  - Index construction driven by asset returns.
+- Market & Models
+  - Risk-neutral *Geometric Brownian Motion (GBM)*.
+  - Flat interest rate, dividend yield, and volatility (for clarity).
+  - Clean separation between *market data*, *model*, and *strategy*.
+- Pricing
+  - *Monte Carlo pricer* for path-dependent strategy indices.
+- Risk
+  - *Bump-and-revalue Delta* framework.
 
-### Market & Models
-- Risk-neutral **Geometric Brownian Motion (GBM)**
-- Flat interest rate, dividend yield, and volatility (for clarity)
-- Clean separation between **market data**, **model**, and **strategy**
-
-### Pricing
-- **Monte Carlo pricer** for path-dependent strategy indices
-- Deterministic seeding for reproducibility
-- Standard error reporting
-
-### Risk
-- **Bump-and-revalue Delta** framework
-- Designed to be extended to Vega, scenarios, and stress testing
-
-### Engineering Quality
-- Modern **C++20**
-- Header-only components where appropriate
-- Out-of-source CMake build
-- Clear separation of concerns
-- Interview-ready design and documentation
-
----
-
-## Project Structure
+## Structure
 
 ```text
 qis-pricing-engine/
