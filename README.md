@@ -3,23 +3,23 @@
 A C++20 pricing and risk-management framework for Quantitative Investment Strategies (QIS) and derivatives written on dynamic investment strategy indices.
 
 ## Specific goals
-- Simulate *rules-based investment strategies* (e.g. volatility targeting),
-- Price *derivatives on strategy indices* via Monte Carlo, produce *risk sensitivities* in a clean, extensible design.
+- Simulate rules-based investment strategies (e.g. volatility targeting),
+- Price derivatives on strategy indices via Monte Carlo, produce risk sensitivities.
 
 ## Key Features
 
 - Strategy & Index Modelling
-  - Dynamic *volatility-targeting strategy*.
+  - Dynamic volatility-targeting strategy.
   - Discrete rebalancing with cash allocation.
   - Index construction driven by asset returns.
 - Market & Models
-  - Risk-neutral *Geometric Brownian Motion (GBM)*.
+  - Risk-neutral Geometric Brownian Motion (GBM).
   - Flat interest rate, dividend yield, and volatility (for clarity).
-  - Clean separation between *market data*, *model*, and *strategy*.
+  - Clean separation between market data, model, and strategy.
 - Pricing
-  - *Monte Carlo pricer* for path-dependent strategy indices.
+  - Monte Carlo pricer for path-dependent strategy indices.
 - Risk
-  - *Bump-and-revalue Delta* framework.
+  - Bump-and-revalue Delta framework.
 
 ## Structure
 
